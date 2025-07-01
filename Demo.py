@@ -19,12 +19,6 @@ token = os.getenv("SECRET")
 endpoint = "https://models.github.ai/inference"
 model = "openai/gpt-4.1-nano"
 
-st.title("Streamlit LangChain Demo")
-
-def generate_response(input_text):
-    llm = ChatOpenAI(base_url=endpoint, temperature=0.7, token=token, model=model)
-    st.info(llm.invoke(input_text))
-
 loader = WebBaseLoader(
     web_paths=("https://lilianweng.github.io/posts/2017-06-21-overview/",),
     bs_kwargs=dict(
