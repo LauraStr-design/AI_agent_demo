@@ -14,4 +14,12 @@ dependencies = [
     "openai>=1.88.0",
     "streamlit>=1.46.0",
     "typing>=3.10.0.0",
+    "youtube-transcript-api",
 ]
+
+[tool.uv.workspace]
+members = [
+    "youtube-transcript-api.errors",
+]
+
+

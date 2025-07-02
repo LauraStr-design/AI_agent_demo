@@ -1,0 +1,21 @@
+{
+  "configurations": [
+    {
+      "type": "debugpy",
+      "request": "launch",
+      "name": "Launch main.py",
+      "program": "${workspaceFolder}/${input:pythonFile}"
+    }
+  ],
+  "inputs": [
+    {
+      "type": "pickString",
+      "id": "pythonFile",
+      "description": "Select the Python file to debug",
+      "options": [
+        "main.py",
+        "Demo.py"
+      ]
+    }
+  ]
+}
